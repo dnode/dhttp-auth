@@ -11,5 +11,5 @@ if (process.env.DHTTP_AUTH_USER && process.env.DHTTP_AUTH_PASSWORD) {
   );
   module.exports = httpAuth.connect(basic);
 } else {
-  module.exports = undefined;
+  module.exports = (req, res, next) => { next(); };
 }

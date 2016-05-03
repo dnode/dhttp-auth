@@ -3,8 +3,5 @@
 
 # Example
 ```javascript
-const dhttpAuth = require('dhttp-auth');
-if (dhttpAuth) {
-  app.use(dhttpAuth);
-}
+app.use(require('dhttp-auth'));
 ```
